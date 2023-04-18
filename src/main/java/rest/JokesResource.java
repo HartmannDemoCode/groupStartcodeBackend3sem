@@ -31,4 +31,10 @@ public class JokesResource {
         return Response.ok().entity(myJokeDTO).build();
 
     }
+    @GET
+    @Path("test")
+    @Produces({MediaType.APPLICATION_JSON})
+    public Response getDadJoke() throws Exception {
+        return Response.ok().entity("{\"msg\":\"Dette er en test\"}").build();
+    }
 }
