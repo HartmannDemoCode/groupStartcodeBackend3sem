@@ -37,4 +37,11 @@ public class JokesResource {
     public Response getDadJoke() throws Exception {
         return Response.ok().entity("{\"msg\":\"Dette er en test\"}").build();
     }
+
+    @GET
+    @Path("test2")
+    @Produces({MediaType.APPLICATION_JSON})
+    public Response getTest2() throws Exception {
+        return Response.ok().entity("{\"msg\":\"Dette er en test\"}").build();
+    }
 }
